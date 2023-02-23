@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(145, 197, 240);
+  }
+  .caixa{
+    background: rgb(145, 197, 240);
+    float: 100%;
+    color: white;
+    display: flex;
+  }
+  .Logo{
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+  }
+  .pesquisa{
+    width: 180px;
+    padding: 5px 10px;
+    margin-left: 700px;
+    margin-top: 15px;
+    border: solid 1px blue;
+    background: b#fff;
+   
+  }
+  .Fone{
+    width: 50px;
+    color:blue;
+    margin: 1px;
+    font-size: 19px; 
+    margin-left: 10px;
+  }
+  .ic{
+    width: 28px;
+    height: 28px;
+    margin: 15px 4px -7px 10px; 
+  }
+  .Buscar{
+    height: 25px;
+    background: none;
+    border-radius: 5px;
+    color: blue;
+    border: 1px solid blue;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin: 10px;
+    
+  }
+  .Menu{
+    margin-top: -30px;
+    margin-left: 20px;
+    font-family: Arial;
+    color: blue;
+    font-weight: bold;
+    
+  
+    
+  
+  }
