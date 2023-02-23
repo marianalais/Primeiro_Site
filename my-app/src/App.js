@@ -1,11 +1,10 @@
-
-
 import App from "./App.css"
 import Logo from "./assets/Logo.png";
 import React, { useState } from "react";
 import ic from "./assets/ic.png";
 
-<body></body>
+<body>
+</body>
 function Header() {
 
   const [name, setName] = useState("");
