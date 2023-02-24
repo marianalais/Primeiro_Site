@@ -1,32 +1,21 @@
 import React from "react";
 import "./styles.css";
-import ImageBanner from "../../assets/quarto.jpg";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import { Carousel } from "react-responsive-carousel";
+import Button from "../Button";
 
 function Carrousel({ banners = [] }) {
   return (
-    <Carousel showThumbs={false}>
-      <div>
-        <img className="banner" src={ImageBanner} alt={"ar condicionado"} />
-        <p className="legend">Legend 1</p>
-      </div>
-      <div>
-        <img className="banner" src={ImageBanner} alt={"ar condicionado"} />{" "}
-        <p className="legend">Legend 2</p>
-      </div>
-      <div>
-        <img className="banner" src={ImageBanner} alt={"ar condicionado"} />{" "}
-        <p className="legend">Legend 3</p>
-      </div>
+    <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+      {banners.map((item, index) => (
+        <div key={index} className="container-carousel">
+          <img className="banner" src={item.src} alt={"ar condicionado"} />
+          <Button texto={item.titulo} />
+        </div>
+      ))}
     </Carousel>
   );
 }
 
 export default Carrousel;
-{
-  /* <div>
-      <img className="banner" src={ImageBanner} alt={"ar condicionado"} />
-      <p className="legend">{"clique aqui"}</p>
-    </div> */
-}

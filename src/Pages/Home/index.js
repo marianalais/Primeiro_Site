@@ -1,15 +1,17 @@
 import Carrousel from "../../components/Carrousel";
 import Text from "../../components/Text";
+import imageQuarto from "../../assets/quarto.jpg";
+import imageSala from "../../assets/sala-estar.jpeg";
 
 function Home() {
   const listaBanners = [
     {
-      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-uGM1iLQj-bVv16YPv32B_yQoFatOjvw89owS_KawCmZwRSaIkTUx6RtOEgdQTejeYU&usqp=CAU",
-      titulo: "Ar",
+      src: imageQuarto,
+      titulo: "Saiba Mais",
     },
     {
-      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-uGM1iLQj-bVv16YPv32B_yQoFatOjvw89owS_KawCmZwRSaIkTUx6RtOEgdQTejeYU&usqp=CAU",
-      titulo: "Ar 2",
+      src: imageSala,
+      titulo: "Saiba Mais",
     },
   ];
   return (
