@@ -1,44 +1,46 @@
 import Logo from "../assets/Logo.png";
 import React, { useState } from "react";
 import ic from "../assets/ic.png";
-import App from './App.css'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Text from "../components/Text";
+import "./style.css";
 
 function Header() {
-
   const [name, setName] = useState("");
 
   return (
-    <div className="caixa">
-      <Link to="/sobre">Sobre</Link> <br />
-      <Link to="/contato">Contato</Link>
+    <div className="container">
       <img className="Logo" src={Logo} alt="Logo" />
+      <div className={"menu-links"}>
+        <Link className="link" to="/home">
+          Home
+        </Link>
+        <Link className="link" to="/sobre">
+          Sobre
+        </Link>
+        <Link className="link" to="/contato">
+          Contato
+        </Link>
+      </div>
       <div>
-        <input className="pesquisa"
+        <input
+          className="pesquisa"
           placeholder="Buscar"
           value={name}
-          onChange={(e) => setName(e.target.value)} />
-        <button className="Buscar" onClick={() => alert("clicou")}>Buscar</button>
+          onChange={(e) => setName(e.target.value)}
+        />
 
-
-        <span className="Fone">
-          <img className="ic" src={ic} alt="Icone" />
-          (54) 99175-9012
-        </span>
+        <button className="Buscar" onClick={() => alert("clicou")}>
+          Buscar
+        </button>
         <div className="Menu">
-          <ul className="Item">
-
-          </ul>
+          <ul className="Item"></ul>
         </div>
-
-
       </div>
-
-
+      <Text className="Fone" texto={"(54) 99175-9012"}>
+        <img className="ic" src={ic} alt="Icone" />
+      </Text>
     </div>
   );
 }
 export default Header;
-
-
-
