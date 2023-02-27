@@ -3,7 +3,7 @@ import "./styles.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Carousel } from "react-responsive-carousel";
-import Button from "../Button";
+
 
 function Carrousel({ banners = [] }) {
   return (
@@ -11,7 +11,7 @@ function Carrousel({ banners = [] }) {
       {banners.map((item, index) => (
         <div key={index} className="container-carousel">
           <img className="banner" src={item.src} alt={"ar condicionado"} />
-          <Button texto={item.titulo} />
+
         </div>
       ))}
     </Carousel>

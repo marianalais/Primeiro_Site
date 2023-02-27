@@ -1,9 +1,8 @@
 import Carrousel from "../../components/Carrousel";
 import imageQuarto from "../../assets/quarto.jpg";
 import imageSala from "../../assets/sala-estar.jpg";
-import Budget from "../../Files/Budget";
 
-function Home() {
+function Contato() {
   const listaBanners = [
     {
       src: imageQuarto,
@@ -19,10 +18,8 @@ function Home() {
       <div className="container-Carrousel">
         <Carrousel banners={listaBanners} />
       </div>
-
-      <Budget/>
     </div>
   );
 }
 
-export default Home;
+export default Contato;

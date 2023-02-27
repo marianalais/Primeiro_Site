@@ -1,0 +1,15 @@
+
+.budget {
+  background: rgba(67, 130, 248, 0.712);
+  width: auto;
+  height: 400px;
+}
+
+.orcamento {
+  width: auto;
+  margin-left: 40%;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}

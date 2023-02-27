@@ -1,8 +1,8 @@
-import Logo from "../assets/Logo.png";
+import Logo from "../../assets/Logo.png";
 import React, { useState } from "react";
-import ic from "../assets/ic.png";
+import ic from "../../assets/ic.png";
 import { Link } from "react-router-dom";
-import Text from "../components/Text";
+import Text from "../../components/Text";
 import "./style.css";
 
 function Header() {
