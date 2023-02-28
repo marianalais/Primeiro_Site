@@ -1,15 +1,56 @@
 
 .budget {
   background: rgba(67, 130, 248, 0.712);
-  width: auto;
-  height: 400px;
+  
+  height: 300px;
 }
+
 
 .orcamento {
   width: auto;
   margin-left: 40%;
   font-size: 30px;
-  color: white;
+  color: blue;
   font-weight: 700;
   text-decoration: none;
+}
+.input-name {
+  width: 500px;
+  margin-left: 33%;
+  font-size: 20px;
+  color: white;
+  font-weight: 70;
+  text-decoration: none;
+  border: solid 1px blue;
+}
+.input-contato {
+  width: 500px;
+  margin-left: 33%;
+  font-size: 20px;
+  color: white;
+  font-weight: 70;
+  text-decoration: none;
+  border: solid 1px blue;
+}
+.input-email {
+  width: 500px;
+  margin-left: 33%;
+  font-size: 20px;
+  color: white;
+  font-weight: 70;
+  text-decoration: none;
+  border: solid 1px blue;
+}
+.input-descricao {
+  width: 500px;
+  margin-left: 33%;
+  font-size: 20px;
+  color: white;
+  font-weight: 70;
+  text-decoration: none;
+  border: solid 1px blue;
+}
+
+.button-enviar{
+  width: 500px;
 }

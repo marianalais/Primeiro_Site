@@ -1,17 +1,13 @@
-import React, { useState } from "react";
 import "./styles.css";
 
-function Input() {
-  const [name, setName] = useState("");
+function Input({value, onChange, placeholder, ...rest }) {
   return (
-    <div>
       <input
-         className="pesquisa"
-         placeholder="buscar"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+        {...rest}
+         placeholder={placeholder}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
         />
-    </div>
   );
 }
 
