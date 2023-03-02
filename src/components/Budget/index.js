@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
-import Button from "../../components/Button";
-import Input from "../../components/Input";
+import Button from "../Button";
+import Input from "../Input";
 
 function Budget() {
   const [name, setName] = useState("");
@@ -41,7 +41,6 @@ function Budget() {
         <Button 
         className={"button-enviar"}
         texto={"Enviar"}/>
-        
       </div>
     </div>
   );

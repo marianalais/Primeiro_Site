@@ -1,7 +1,7 @@
 import Carrousel from "../../components/Carrousel";
 import imageQuarto from "../../assets/quarto.jpg";
 import imageSala from "../../assets/sala-estar.jpg";
-import Budget from "../../Files/Budget";
+import Budget from "../../components/Budget";
 
 function Home() {
   const listaBanners = [
